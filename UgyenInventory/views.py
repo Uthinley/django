@@ -54,13 +54,14 @@ def add_desktop(request):
 def add_mobile(request):
 	return add_device(request,MobileForm)
 
-def home(request):
-    try:
-        response = request.GET['http://freegeoip.net/json/']
-        geodata = response.json()
-    except KeyError:
-        response="error"
-	return  render(request,'home.html',{
-		'ip':geodata['ip'],
-		'country':geodata['country_name']
-	})
+# def home(request):
+#     try:
+#         response = request.GET['http://freegeoip.net/json/']
+#         geodata = response.json()
+#     except KeyError:
+#         response="error"
+        
+# 	return  render(request,'home.html',{
+# 		'ip':geodata['ip'],
+# 		'country':geodata['country_name']
+# 	})

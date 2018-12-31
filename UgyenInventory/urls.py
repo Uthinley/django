@@ -9,5 +9,5 @@ urlpatterns = [
     path('add_laptop', add_laptop, name='add_laptop'),
     path('add_desktop', add_desktop, name='add_desktop'),
     path('add_mobile', add_mobile, name='add_mobile'),
-    path('first/',home, name='home'),
+    # path('first/',home, name='home'),
 ]
